@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.select {
+    font-size: 20px;
+}
+
+.select2 {
+    background-color: #D19185;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.map {
+    width: 100%;
+}
+
+.map-img {
+    width: 100%;
+}

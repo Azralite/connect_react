@@ -1,0 +1,13 @@
+.confirmButton {
+    background-color: black;
+    border: none;
+    color: #FCF1E7;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 5px 5px #D19185;
+    margin-bottom: 5vh;
+    height: 50px;
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+}

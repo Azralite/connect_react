@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
+import Header from './components/Header/Header'
+import AppIndex from './components/Index/AppIndex'
 import reportWebVitals from './reportWebVitals';
+import Vote4Country from './components/Vote4Country/Vote4Country'
+import Vote4Game from './components/Vote4Game/Vote4Game'
+import Rate from './components/Rate/Rate'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="mainDiv red">
+    <Header />
+    <Rate />
+  </div>,
   document.getElementById('root')
 );
 
