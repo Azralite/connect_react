@@ -5,27 +5,17 @@ import Slider from "./Slider";
 import ConfirmButton from "../Button/ConfirmButton";
 import "./Rate.css";
 
-import cheese from "../../assets/cheese.png";
-import croissant from "../../assets/dippingCroissant.png";
 // import cheese from "../../assets/cheese.png";
-// import cheese from "../../assets/cheese.png";
+// import croissant from "../../assets/dippingCroissant.png";
+// // import cheese from "../../assets/cheese.png";
+// // import cheese from "../../assets/cheese.png";
 
 export default function Rate() {
   let tmp = Math.floor(Math.random() * rateData.length);
-  let elt = rateData[tmp];
+  let imgSrc = rateData[tmp].img;
+  let caption = rateData[tmp].caption;
 
-  let imgVar;
-
-  switch (elt.img) {
-    case "cheese.png":
-      imgVar = cheese;
-      break;
-    case "dippingCroissant.png":
-      imgVar = croissant;
-      break;
-  }
-
-  console.log(imgVar);
+  console.log(imgSrc);
 
   let rateRandom = Math.floor(Math.random() * 2);
   let question;
@@ -42,7 +32,7 @@ export default function Rate() {
   return (
     <div className="wrapper">
       {question}
-      <Card img={imgVar} caption={elt.caption} />
+      <Card img={imgSrc} caption={caption} />
       <Slider />
 
       <ConfirmButton />
