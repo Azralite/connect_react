@@ -8,12 +8,16 @@ import reportWebVitals from './reportWebVitals';
 import Vote4Country from './components/Vote4Country/Vote4Country'
 import Vote4Game from './components/Vote4Game/Vote4Game'
 import Rate from './components/Rate/Rate'
+import App from './App';
+
+
+import { BrowserRouter } from "react-router-dom";
+
 
 ReactDOM.render(
-  <div className="mainDiv red">
-    <Header />
-    <Rate />
-  </div>,
+  <BrowserRouter>
+  <App></App>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

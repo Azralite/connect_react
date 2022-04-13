@@ -2,22 +2,24 @@ import React from "react";
 import ConfirmButton from "../Button/ConfirmButton";
 import "./Vote4Game.css";
 
+import { Link } from "react-router-dom";
+
 export default function Vote4Country() {
   return (
     <div className="wrapper">
       <div className="select2">Vote 4 the game</div>
 
-      <a href="rate1.html" className="voteBox">
+      <Link to="/rate" className="voteBox">
         <div className="game">Do(n't) do that</div>
-      </a>
+      </Link>
 
-      <a href="image1.html" className="voteBox">
+      <Link to="image" className="voteBox">
         <div className="game">Words + images</div>
-      </a>
+      </Link>
 
-      <a href="#" className="voteBox">
+      <Link to="#" className="voteBox">
         <div className="game">Geo-guesser</div>
-      </a>
+      </Link>
 
       {/* <ConfirmButton /> */}
     </div>

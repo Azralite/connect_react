@@ -1,6 +1,7 @@
 import React from "react";
 import "./AppIndex.css";
 
+import { Link } from "react-router-dom";
 import ConfirmButton from "../Button/ConfirmButton";
 
 function AppIndex() {
@@ -8,15 +9,13 @@ function AppIndex() {
     <div className="wrapper">
       <div className="select">Select your choice</div>
 
-      <a href="vote4country.html" className="voteBox">
+      <Link to="/vote4country" className="voteBox">
         <div className="vote">Vote 4 country</div>
-      </a>
+      </Link>
 
-      <a href="vote4game.html" className="voteBox">
+      <Link to="vote4game" className="voteBox">
         <div className="vote">Vote 4 game</div>
-      </a>
-
-      {/* <ConfirmButton /> */}
+      </Link>
     </div>
   );
 }
