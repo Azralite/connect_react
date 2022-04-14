@@ -1,0 +1,15 @@
+.card {
+    border-radius: 20px;
+    box-shadow: 10px 10px #000;   
+    width: 80%;
+    background-color: #B98A69;
+    color: white;
+    padding: 20px;
+}
+
+.button--wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

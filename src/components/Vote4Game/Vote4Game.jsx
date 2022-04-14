@@ -13,7 +13,7 @@ export default function Vote4Country() {
         <div className="game">Do(n't) do that</div>
       </Link>
 
-      <Link to="image" className="voteBox">
+      <Link to="/image" className="voteBox">
         <div className="game">Words + images</div>
       </Link>
 

@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 80%;
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* border: 2px solid #FCF1E7; */
+}
+
+.title {
+    width: 80%;
+}

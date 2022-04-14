@@ -2,6 +2,8 @@ import React from "react";
 import ConfirmButton from "../Button/ConfirmButton";
 import "./Vote4Country.css";
 
+import { Link } from "react-router-dom";
+
 import map from "../../assets/map.png";
 
 export default function Vote4Country() {
@@ -13,7 +15,9 @@ export default function Vote4Country() {
         <img src={map} alt="map of the world" className="map-img" />
       </div>
 
-      <ConfirmButton />
+      <Link to="/">
+        <ConfirmButton />
+      </Link>
     </div>
   );
 }

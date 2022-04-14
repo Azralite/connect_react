@@ -5,15 +5,13 @@ import Slider from "./Slider";
 import ConfirmButton from "../Button/ConfirmButton";
 import "./Rate.css";
 
-// import cheese from "../../assets/cheese.png";
-// import croissant from "../../assets/dippingCroissant.png";
-// // import cheese from "../../assets/cheese.png";
-// // import cheese from "../../assets/cheese.png";
+import { Link } from "react-router-dom";
 
 export default function Rate() {
   let tmp = Math.floor(Math.random() * rateData.length);
   let imgSrc = rateData[tmp].img;
   let caption = rateData[tmp].caption;
+  let discussion = rateData[tmp].discussion;
 
   console.log(imgSrc);
 
@@ -35,7 +33,9 @@ export default function Rate() {
       <Card img={imgSrc} caption={caption} />
       <Slider />
 
-      <ConfirmButton />
+      <Link to={`/discussion/${discussion}`}>
+        <ConfirmButton />
+      </Link>
     </div>
   );
 }

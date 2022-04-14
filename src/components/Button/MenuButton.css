@@ -1,0 +1,28 @@
+.menu--button {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FCF1E7;
+    height: 2rem;
+}
+
+.done--button {
+    border-radius: 20px ;
+    /* width: 60%; */
+    box-shadow: 10px 10px #000;
+    color: white;
+    background-color: #B98A69;
+    padding: 10px;
+}
+
+.next--button {
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    /* box-shadow: 10px 10px #fff; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

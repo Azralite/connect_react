@@ -61,3 +61,8 @@ header {
     rotate: -45deg;
     translate: 3px 10px;
 }
+
+
+.ham--img {
+    width: 25px;
+}
