@@ -13,3 +13,8 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.link {
+    width: 45%;
+    height: 100%;
+}

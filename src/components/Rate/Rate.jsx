@@ -31,6 +31,7 @@ export default function Rate() {
     <div className="wrapper">
       {question}
       <Card img={imgSrc} caption={caption} />
+      {/* Slider Not working on Nicolas'phone */}
       <Slider />
 
       <Link to={`/discussion/${discussion}`}>

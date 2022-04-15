@@ -6,6 +6,8 @@ import "./Card.css";
 import { useParams } from "react-router-dom";
 import NextButton from "../Button/NextButton";
 
+import { Link } from "react-router-dom";
+
 export default function Discussion2(props) {
   let tmp = Math.floor(Math.random() * 2);
   const par = useParams();
@@ -16,8 +18,12 @@ export default function Discussion2(props) {
       <h3>Discussion Time!</h3>
       <Card />
       <div className="button--wrapper">
-        <NextButton title="Next Statement" />
-        <NextButton title="Different Discussion" />
+        <Link to="/rate" className="link">
+          <NextButton title="Next Statement" />
+        </Link>
+        <Link to="/rate" className="link">
+          <NextButton title="Different Discussion" />
+        </Link>
       </div>
     </div>
   );
